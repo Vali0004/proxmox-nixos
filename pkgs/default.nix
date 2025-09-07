@@ -4,7 +4,7 @@
   ...
 }:
 let
-  callPackage = pkgs.lib.callPackageWith (pkgs // ours);
+  callPackage = pkgs.callPackage;
 
   ours = {
     authenpam = callPackage ./perl-modules/authenpam { };
